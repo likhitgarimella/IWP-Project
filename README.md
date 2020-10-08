@@ -3,11 +3,11 @@ Omnifood Website
 </h1>
 
 <h2 align="center">
-HCI Project - J Component
+IWP Project - J Component
 </h2>
 
 <h4 align="center">
-https://likhitgarimella.github.io/HCI-Project/
+https://likhitgarimella.github.io/IWP-Project/
 </h4>
 
 <h2 align="center">
