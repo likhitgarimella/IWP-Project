@@ -15,3 +15,20 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase with a default Firebase project
+firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase with a second Firebase project
+var otherProject = firebase.initializeApp(otherProjectFirebaseConfig, "other");
+
+console.log(firebase.app().omnifood);  // "[DEFAULT]"
+console.log(otherProject.omnifood);    // "otherProject"
+
+// Use the shorthand notation to access the default project's Firebase services
+var defaultStorage = firebase.auth();
+var defaultFirestore = firebase.database();
+
+// Use the otherProject variable to access the second project's Firebase services
+var otherStorage = otherProject.auth();
+var otherFirestore = otherProject.database();
